@@ -35,7 +35,21 @@ You’re placed in a virtual environment simulating real-world vulnerabilities. 
 | 6 | Extracted from a `.pcap` file using IP as password               | Wireshark + zip cracking               |
 | 7 | Accessed via SSH-like login using flags 5 & 6                    | Credential reuse                       |
 | 8 | Discovered through privilege escalation in system directories    | Python script execution                |
-
 ---
 
+## What I Learned
 
+- Always scan everything — open ports, hidden folders, file metadata.
+- Tools like `nmap`, `nikto`, and `exiftool` are extremely useful in CTFs.
+- Even common things like `robots.txt` can leak sensitive paths.
+- `.pcap` files can contain valuable data like IPs and credentials.
+- Writable files on a system can be a goldmine for privilege escalation.
+
+---
+##  Final Thoughts
+
+This was a really fun and challenging exercise. It helped me get hands-on with tools I’ve mostly read about before. It showed how small misconfigurations or old files can be a huge risk in real systems.
+
+> “The quieter you become, the more you can hear.” — Ram Dass (also true for penetration testing)
+
+Thanks for checking it out!
